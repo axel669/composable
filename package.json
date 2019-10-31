@@ -1,0 +1,25 @@
+{
+  "name": "@axel669/compose",
+  "version": "1.0.0",
+  "description": "compose and pipe for javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "bracer src/**/*.test.js",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axel669/compose.git"
+  },
+  "keywords": [
+    "compose",
+    "pipe",
+    "functional"
+  ],
+  "author": "Axel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axel669/compose/issues"
+  },
+  "homepage": "https://github.com/axel669/compose#readme"
+}
