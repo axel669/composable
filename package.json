@@ -1,8 +1,8 @@
 {
-  "name": "@axel669/compose",
+  "name": "@axel669/composable",
   "version": "1.0.0",
   "description": "compose and pipe for javascript",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "npm run build && bracer dist/**/*.test.js",
     "build-node": "babel src/ -d dist",
@@ -30,5 +30,9 @@
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "rollup": "^1.26.3"
-  }
+  },
+  "files": [
+    "/dist",
+    "/standalone"
+  ]
 }
