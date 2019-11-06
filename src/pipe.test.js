@@ -1,4 +1,5 @@
-const pipe = require("./pipe")
+// const pipe = require("./pipe")
+import pipe from "./pipe"
 
 const wait = time => new Promise(
     resolve => setTimeout(resolve, time)

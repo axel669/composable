@@ -9,4 +9,4 @@ compose.async = (...functions) =>
         value
     )
 
-module.exports = compose
+export default compose

@@ -1,4 +1,5 @@
-const compose = require("./compose")
+// const compose = require("./compose")
+import compose from "./compose"
 
 const wait = time => new Promise(
     resolve => setTimeout(resolve, time)

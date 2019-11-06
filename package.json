@@ -4,8 +4,10 @@
   "description": "compose and pipe for javascript",
   "main": "src/index.js",
   "scripts": {
-    "test": "bracer src/**/*.test.js",
-    "build": "rollup -c"
+    "test": "npm run build && bracer dist/**/*.test.js",
+    "build-node": "babel src/ -d dist",
+    "build-browser": "rollup -c",
+    "build": "npm run build-node && npm run build-browser"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/axel669/compose/issues"
   },
-  "homepage": "https://github.com/axel669/compose#readme"
+  "homepage": "https://github.com/axel669/compose#readme",
+  "devDependencies": {
+    "@axel669/bracer": "^0.2.0",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "rollup": "^1.26.3"
+  }
 }

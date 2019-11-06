@@ -9,4 +9,4 @@ pipe.async = (...functions) =>
         value
     )
 
-module.exports = pipe
+export default pipe
